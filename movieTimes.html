@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <h1 class="name">Movieweb</h1>
+      </header><br>
+
+      <p>Welcome to Movieweb! Please select your movie below:</p><br><br>
+
+      <div class="jumbotron">
+        <form id="movieForm">
+            <label for="movieType">Which movie would you like to see?</label>
+              <select id="movieType">
+                <option value="NaN">-</option>
+                <option value="firstRun">Star Wars Comes Back</option>
+                <option value="secondRun">Old Indiana Jones</option>
+              </select><br>
+
+            <label for="movieTime">Select your time</label>
+            <select id="movieTime">
+              <option value="matinae">12:00pm</option>
+              <option value="matinae">2:00pm</option>
+              <option value="regular">4:00pm</option>
+              <option value="regular">6:00pm</option>
+              <option value="regular">8:00pm</option>
+            </select><br>
+
+            <label for="yearBorn">Please enter what year you were born:</label>
+            <input id="yearBorn" type="form" name="countTo" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+        <p>Here's Your Price:</p>
+        <ul id="receipt">
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
